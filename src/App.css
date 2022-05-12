@@ -130,6 +130,13 @@ body {
 
 }
 
+@media screen and (max-width: 360px) {
+  .current{
+    width: 100%;
+  }
+
+}
+
 .current .icon {
   /* width: 90px; */
   display: flex;
@@ -246,13 +253,13 @@ body {
 /* Animation for Gust */
 
 #circle {
-  animation: vector-1-p .6s cubic-bezier(0.175, 0.885, 0.32, 1.275)infinite;
+  animation: vector-1-p .5s cubic-bezier(.25,.37,.95,.64) infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
 
 #second-bar {
-  animation: bar 1.2s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  animation: bar 1.2s cubic-bezier(.25,.37,.95,.64) infinite;
 }
 
 @keyframes bar {
@@ -293,9 +300,9 @@ body {
 
 
 @media screen and (min-width: 810px) {
-  .body{
+  /* .body{
     zoom: 200%;
-  }
+  } */
   .current {
     margin-top: 15px;
     background-color: #045f93;
@@ -310,9 +317,9 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
-  .body {
+  /* .body {
     zoom: 250%;
-  }
+  } */
 
   .head-b {
     margin-top: 10px;
@@ -325,9 +332,10 @@ body {
   .current {
     margin-top: 15px;
     background-color: #045f93;
-    width: 80%;
+    width: 40%;
     border-radius: 40px;
     box-shadow: 3px 3px 10px rgb(34, 34, 34);
+    padding-bottom: 10px;
   }
 
 }
