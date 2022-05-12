@@ -169,6 +169,25 @@ body {
   gap: 9px;
   text-align: center;
   /* color: black; */
+  animation: result 2.6s linear infinite;
+}
+
+@keyframes result {
+  /* from{
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(10px);
+  } */
+  0%{
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .f .result div {
@@ -290,11 +309,26 @@ body {
 }
 
 @keyframes thin {
-  from{
+  /* from{
     transform: translateX(0px);
   }
   to{
     transform: translateX(10px);
+  } */
+  0%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  75%{
+    transform: translateX(10px);
+  }
+  100%{
+    transform: translateX(0px);
   }
 }
 

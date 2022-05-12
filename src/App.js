@@ -117,7 +117,7 @@ function App() {
               </div>
               <div>
                 <img src="./humidity1.svg" alt="" />
-                <p>Humidity: <br /> {weatherData.main.humidity}</p>
+                <p>Humidity: <br /> {weatherData.main.humidity}%</p>
               </div>
               <div>
                 {/* <img src="./wind.svg" alt="" /> */}
